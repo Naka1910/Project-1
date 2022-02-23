@@ -95,18 +95,24 @@ width: 100%;
   max-width: 89%;
   margin: 0 auto;
   margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+.con-icon{
+  width: 7px;
+  height: 12px;
 }
 .Products-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 89%;
   margin: 0 auto;
-  margin-top: 30px;
-
-
-  
+  margin-top: 30px; 
 }
-
+.Container-div1{
+  display: flex;
+  justify-content: space-between;
+}
 .prod-img{
   width: 285px;
   height: 151px;
@@ -165,9 +171,7 @@ height: 100%;
   display: flex;
   flex-direction: column;
 }
-.Footer-nav{
 
-}
 .Footer-ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -182,12 +186,29 @@ height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .Footer-container6{
   display: flex;
   background-color: #FFF84C;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
 }
-.Footer-container7{
+/* .Footer-container7{
   display: flex;
   justify-content: space-between;
+} */
+.instagram{
+margin: 0px 14px;
+}
+.Footer-text{
+  color: #FCFCFC;
+  font-family: 'Futura';
+  font-size: 16px;
+}
+.Footer-text1{
+ font-family: 'Open Sans';
+ font-size: 14px;
+  margin-right: 12px;
 }

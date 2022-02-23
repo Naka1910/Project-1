@@ -37,12 +37,12 @@ export default function Footer() {
       </div>
       <div className='Footer-container4'>
         <div className='Footer-container5'>
-          <p>Terms @ Conditions</p>
+          <p className='Footer-text'>Terms @ Conditions</p>
           <div className='Footer-container6'>
-            <p>Follow Us</p>
-            <div className='Footer-container7'>
+            <p className='Footer-text1'>Follow Us</p>
+            <div>
               <img src={you} alt={you} />
-              <img src={instagram} alt={instagram} />
+              <img className='instagram' src={instagram} alt={instagram} />
               <img src={fb} alt={fb} />
             </div>
           </div>
