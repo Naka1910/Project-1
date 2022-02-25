@@ -19,9 +19,9 @@ export default function Products() {
   return (
     <div className="Products-container">
       {
-        products.map((item, index) => {
+        products.map((item) => {
           return (
-            <div className="prod-cont" key={index}>
+            <div className="prod-cont" key={item.id}>
               <img className="prod-img" src={item.image} alt={item.image} />
               <p className="prod-text">{item.description}</p>
               <p>{item.price}</p>

@@ -1,5 +1,6 @@
 import logo from './logo.svg'
 import search from './search.svg'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -25,7 +26,11 @@ export default function Header() {
 
         <nav className='Header-nav'>
           <ul className='Header-ul'>
-            <li>Shop</li>
+            <li>
+              <Link to='/Products'>
+                Shop
+              </Link>
+            </li>
             <li>G-brands</li>
             <li>G-box</li>
             <li>Ainzvai-Card</li>
