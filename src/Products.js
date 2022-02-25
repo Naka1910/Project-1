@@ -1,13 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 
 export default function Products() {
-  const [products, setProducts] = useState([]);
+  const [product, setProduct] = useState([]);
   function getData() {
     axios.get('https://retoolapi.dev/FNoduP/products')
       .then(response => {
-        setProducts(response.data)
+        setProduct(response.data)
       })
       .catch(error => {
         console.log(error)
@@ -19,14 +20,16 @@ export default function Products() {
   return (
     <div className="Products-container">
       {
-        products.map((item) => {
+        product.map((product) => {
           return (
-            <div className="prod-cont" key={item.id}>
-              <img className="prod-img" src={item.image} alt={item.image} />
-              <p className="prod-text">{item.description}</p>
-              <p>{item.price}</p>
+            <Link to={`${product.id}`} key={product.id}>
+              <div className="prod-cont" >
+                <img className="prod-img" src={product.image} alt={product.image} />
+                <p className="prod-text">{product.description}</p>
+                <p className="Prod-price">{product.price}</p>
 
-            </div>
+              </div>
+            </Link>
           )
         })
       }
