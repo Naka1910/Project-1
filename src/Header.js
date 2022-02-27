@@ -27,16 +27,44 @@ export default function Header() {
         <nav className='Header-nav'>
           <ul className='Header-ul'>
             <li>
-              <Link to='/Products'>
+              <Link className='Header-lis' to='/Products'>
                 Shop
               </Link>
             </li>
-            <li>G-brands</li>
-            <li>G-box</li>
-            <li>Ainzvai-Card</li>
-            <li>Broches</li>
-            <li>Deutche producte</li>
-            <li>Blog</li>
+            <li>
+              <Link className='Header-lis' to='/Products'>
+              G-brands 
+              </Link>
+              </li>
+              
+            <li>
+              <Link className='Header-lis' to='/Products'>
+              G-box
+              </Link>
+              </li>
+              
+            <li>
+              <Link className='Header-lis' to='/Products'>
+              Ainzvai-Card
+              </Link>
+              </li>
+              
+            <li>
+              <Link className='Header-lis' to='/Products'>
+              Broches
+              </Link>
+              </li>
+              
+            <li>
+            <Link className='Header-lis' to='/Products'>
+              Deutche producte
+            </Link>
+            </li>
+            <li>
+              <Link className='Header-lis' to='/Products'>
+              Blog
+              </Link>
+              </li>
           </ul>
         </nav>
 

@@ -4,8 +4,9 @@ import Header from './Header';
 import Container from './Container';
 import Products from './Products';
 import Footer from './Footer';
-import { Routes, Route, } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import Desctiption from './Description';
+import Basket from './Basket';
 
 
 
@@ -15,12 +16,10 @@ function App() {
       <Header />
       <Container />
       <Routes>
-        <Route path='/Product/:id' element={<Desctiption />} />
-
-
+        <Route path='/' element={<Products />}/>
+        <Route path='/:id' element={<Desctiption />} /> 
+        <Route path='/basket' element={<Basket/>}/>
       </Routes>
-
-      <Products />
       <Footer />
 
 

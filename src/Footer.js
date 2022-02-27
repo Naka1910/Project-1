@@ -13,11 +13,11 @@ export default function Footer() {
           <div className="Footer-line"></div>
           <div className='Footer-icon' >
             <img src={message} alt={message} />
-            <p>info@dpharmacy.ge</p>
+            <p className='Footer-txt'>info@dpharmacy.ge</p>
           </div>
           <div className='Footer-icon'>
             <img src={phone} alt={phone} />
-            <p>+995 577 11 08 08</p>
+            <p className='Footer-txt'>+995 577 11 08 08</p>
           </div>
         </div>
         <div className='Footer-container3'>
