@@ -20,44 +20,44 @@ export default function Products() {
   }, [])
   return (
     <div className="Main-prod-cont">
-    <div className="Products-container">
-      {
-         product.filter(item => item.id <13).map((product) => {
-          return (
-            <Link to={`${product.id}`} key={product.id}>
-              <div className="Prod-cont" >
-                <img className="Prod-img" src={product.image} alt={product.image} />
-                <p className="Prod-text">{product.description.slice(35,78)}</p>
-                <p className="Prod-price">{product.price}</p>
+      <div className="Products-container">
+        {
+          product.slice(0, 12).map((product) => {
+            return (
+              <Link to={`${product.id}`} key={product.id}>
+                <div className="Prod-cont" >
+                  <img className="Prod-img" src={product.image} alt={product.image} />
+                  <p className="Prod-text">{product.description.slice(35, 78)}</p>
+                  <p className="Prod-price">{product.price}</p>
 
-              </div>
-            </Link>
-          )
-        })
+                </div>
+              </Link>
+            )
+          })
         }
-         </div>
-         <div className="Prod-solgar">
-          <img className="solgar" src={solgar}alt={solgar} />
-          </div>
-     <div className="Products-container">
-            {
-         product.filter(item => item.id <9).map((product) => {
-          return (
-            <Link to={`/${product.id}`} key={product.id}>
-              <div className="Prod-cont" >
-                <img className="Prod-img" src={product.image} alt={product.image} />
-                <p className="Prod-text">{product.description.slice(35,78)}</p>
-                <p className="Prod-price">{product.price}</p>
+      </div>
+      <div className="Prod-solgar">
+        <img className="solgar" src={solgar} alt={solgar} />
+      </div>
+      <div className="Products-container">
+        {
+          product.slice(13, 25).map((product) => {
+            return (
+              <Link to={`/${product.id}`} key={product.id}>
+                <div className="Prod-cont" >
+                  <img className="Prod-img" src={product.image} alt={product.image} />
+                  <p className="Prod-text">{product.description.slice(35, 78)}</p>
+                  <p className="Prod-price">{product.price}</p>
 
-              </div>
-            </Link>
-          )
-        })
-        
-      }
-      
-    </div>
-   
+                </div>
+              </Link>
+            )
+          })
+
+        }
+
+      </div>
+
     </div>
   )
 }

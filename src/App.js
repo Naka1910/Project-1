@@ -16,9 +16,9 @@ function App() {
       <Header />
       <Container />
       <Routes>
-        <Route path='/' element={<Products />}/>
-        <Route path='/:id' element={<Desctiption />} /> 
-        <Route path='/basket' element={<Basket/>}/>
+        <Route path='/' element={<Products />} />
+        <Route path='/:id' element={<Desctiption />} />
+        <Route path='/basket' element={<Basket />} />
       </Routes>
       <Footer />
 
